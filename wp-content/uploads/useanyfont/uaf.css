@@ -1,0 +1,10 @@
+			@font-face {
+				font-family: 'rockwell-condensed';
+				font-style: normal;
+				src: url('/christelleivorra/wp-content/uploads/useanyfont/170423015918Rockwell-condensed.eot');
+				src: local('rockwell-condensed'), url('/christelleivorra/wp-content/uploads/useanyfont/170423015918Rockwell-condensed.eot') format('embedded-opentype'), url('/christelleivorra/wp-content/uploads/useanyfont/170423015918Rockwell-condensed.woff') format('woff');
+			}
+            
+            .rockwell-condensed{font-family: 'rockwell-condensed' !important;}
+            
+		
