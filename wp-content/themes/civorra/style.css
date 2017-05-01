@@ -1,0 +1,13 @@
+/*
+Theme Name: civorra
+Author: Christelle IVORRA & Vincent JACQUEMIN
+Author URI: http://www.civorra.fr
+Description: Thème du site civorra
+Template: twentyseventeen
+*/
+@import url("../twentyseventeen/style.css");
+.has-header-image .custom-header-media img, .has-header-video .custom-header-media video, .has-header-video .custom-header-media iframe, .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+    width: auto;
+    height: auto;
+    min-height: 0;
+}
