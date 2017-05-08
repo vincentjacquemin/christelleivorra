@@ -9,3 +9,6 @@
 	Template: zerif-lite
 */
 @import '../zerif-lite/style.css';
+#client-feedbacks .feedback-box, .testimonial .widget_zerif_testim-widget {
+    width: 100%;
+}
