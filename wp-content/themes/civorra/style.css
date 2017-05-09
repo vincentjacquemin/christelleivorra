@@ -57,6 +57,10 @@ header h1.intro-text .important {
     width: 100%;
 }
 
+.about-us h3 {
+    font-size: 20pt;
+}
+
 .about-us .col-md-12.zerif_about_us_center p {
     text-align: justify;
     color: white;
@@ -161,6 +165,10 @@ header h1.intro-text .important {
     font-weight: normal;
     text-align: left;
     width: 100%;
+}
+
+.our-team h3 {
+    font-size: 20pt;
 }
 
 .our-team p {
