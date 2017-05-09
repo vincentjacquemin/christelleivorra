@@ -35,6 +35,7 @@ header h1.intro-text {
     text-align: right;
     float: right;
     line-height: 150%;
+    color: black;
 }
 
 header h1.intro-text .important {
@@ -42,19 +43,27 @@ header h1.intro-text .important {
     font-weight: bold;
 }
 
+@media (max-width: 992px) {
+    .section-header {
+        padding-bottom: 0;
+    }
+}
 
 /* QUI SUIS-JE ? */
 .about-us {
     text-align: justify;
     background: #207E74;
+    padding-top: 10px;
 }
 
 .about-us h2 {
     font-family: 'bernadette',sans-serif !important;
-    text-transform: capitalize;
+    text-transform: none;
     font-weight: normal;
     text-align: left;
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .about-us h3 {
@@ -72,23 +81,30 @@ header h1.intro-text .important {
     font-size: 16pt;
 }
 
+@media (max-width: 480px) {
+    .about-us h2 {
+        font-size: 26pt !important;
+    }
+}
+
 
 /* MES EXPERIENCES */
 .testimonial {
     background: #DBDBD9;
+    padding-top: 10px;
 }
 
 .testimonial h2 {
     color: #207E74;
     font-family: 'bernadette',sans-serif !important;
-    text-transform: capitalize;
+    text-transform: none;
     font-weight: normal;
     text-align: left;
     width: 100%;
 }
 
 .testimonial .feedback-box {
-    border: #207E74 solid 3px;
+    border: #207E74 solid 2px;
 }
 
 /* Box title */
@@ -149,6 +165,12 @@ header h1.intro-text .important {
     font-size: 16pt;
 }
 
+@media (max-width: 480px) {
+    .testimonial h2 {
+        font-size: 26pt !important;
+    }
+}
+
 
 /* MES COMPETENCES */
 .our-team {
@@ -156,12 +178,13 @@ header h1.intro-text .important {
     color: white;
     text-align: justify;
     font-size: 16pt;
+    padding-top: 10px;
 }
 
 .our-team h2 {
     color: white;
     font-family: 'bernadette',sans-serif !important;
-    text-transform: capitalize;
+    text-transform: none;
     font-weight: normal;
     text-align: left;
     width: 100%;
@@ -175,21 +198,28 @@ header h1.intro-text .important {
     font-size: 16pt;
 }
 
-.about-us p .highlight {
+.our-team p .highlight {
     color: #FFC637;
     font-size: 16pt;
+}
+
+@media (max-width: 480px) {
+    .our-team h2 {
+        font-size: 26pt !important;
+    }
 }
 
 
 /* ME CONTACTER */
 .contact-us {
     background: #DBDBD9;
+    padding-top: 10px;
 }
 
 .contact-us h2 {
     color: #207E74;
     font-family: 'bernadette',sans-serif !important;
-    text-transform: capitalize;
+    text-transform: none;
     font-weight: normal;
     text-align: left;
     width: 100%;
@@ -199,4 +229,10 @@ header h1.intro-text .important {
     font-family: 'rockwell-condensed',serif !important;
     font-size: 16pt;
     color: #8b8b8b;
+}
+
+@media (max-width: 480px) {
+    .contact-us h2 {
+        font-size: 26pt !important;
+    }
 }
