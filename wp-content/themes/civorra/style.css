@@ -23,10 +23,69 @@ body {
     font-family: 'rockwell-condensed',serif !important;
 }
 
-#client-feedbacks .feedback-box, .testimonial .widget_zerif_testim-widget {
-    width: 100%;
+/* HEADER TITLE */
+header .header-content-wrap {
+    background: none;
 }
 
+header .navbar-inverse {
+    background: #303030;
+}
+
+header .navbar-inverse .navbar-brand .site-title a {
+    color: white;
+    font-family: "bernadette",sans-serif;
+    font-size: 20pt;
+    font-weight: normal;
+}
+
+.navbar-inverse .navbar-brand .site-title-tagline-wrapper .site-title > a:hover,
+.navbar-inverse .navbar-brand .site-title-tagline-wrapper .site-title > a:focus {
+    color: white;
+}
+
+.navbar-inverse .navbar-toggle.collapsed {
+    float: left;
+    background-color: transparent !important;
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle.active {
+    float: left;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: transparent !important;
+    border-color: transparent;
+}
+
+.navbar-brand {
+    padding: 12px 0 0 0;
+}
+
+/* HEADER MENU */
+header .navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-size: 14pt;
+}
+
+header .navbar-inverse .navbar-nav>li>a:before {
+    background: #207E74;
+}
+
+header .navbar-inverse .navbar-nav>li.current>a,
+header .navbar-inverse .navbar-nav>li.link-focus>a {
+    color: #207E74;
+}
+
+header .navbar-inverse .navbar-nav>li>a:hover,
+header .navbar-inverse .navbar-toggle>li>a:focus {
+    color: #207E74 !important;
+}
+
+
+/* HEADER */
 header h1.intro-text {
     font-family: 'rockwell-condensed',serif !important;
     text-transform: none;
@@ -92,6 +151,10 @@ header h1.intro-text .important {
 .testimonial {
     background: #DBDBD9;
     padding-top: 10px;
+}
+
+#client-feedbacks .feedback-box, .testimonial .widget_zerif_testim-widget {
+    width: 100%;
 }
 
 .testimonial h2 {
