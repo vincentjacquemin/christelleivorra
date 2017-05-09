@@ -27,6 +27,20 @@ body {
     width: 100%;
 }
 
+header h1.intro-text {
+    font-family: 'rockwell-condensed',serif !important;
+    text-transform: none;
+    font-weight: normal;
+    width: 60%;
+    text-align: right;
+    float: right;
+}
+
+header h1.intro-text .important {
+    font-size: 55px;
+    font-weight: bold;
+}
+
 
 /* QUI SUIS-JE ? */
 .about-us {
