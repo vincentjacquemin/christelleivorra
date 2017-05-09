@@ -125,6 +125,7 @@ header h1.intro-text .important {
     font-size: 16pt;
     text-align: justify;
     margin-left: -4.8%;
+    line-height: 100%;
 }
 
 .testimonial .feedback-box .message ul li .highlight {
