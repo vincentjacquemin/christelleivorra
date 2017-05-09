@@ -1,15 +1,11 @@
 <?php
 /*
-Plugin Name: Civorra - ThemeIsle Companion
-Plugin URI: https://github.com/Codeinwp/themeisle-companion
-Description: Creates the widgets "Zerif - Testimonial widget" , "Zerif - Team member widget" , "Zerif - Our focus widget" and "Zerif - Clients widget" in the Zerif Lite theme.
-Version: 1.0.1
-Author: Themeisle
-Author URI: http://themeisle.com
-Text Domain: themeisle-companion
+Plugin Name: Civorra - ThemeIsle Companion Extension
+Description: ThemeIsle Companion extension
+Version: 1.0.0
+Author: Vincent Jacquemin
+Text Domain: c-themeisle-companion
 Domain Path: /languages
-License: GPLv2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
 define( 'THEMEISLE_COMPANION_VERSION',  '1.0.1' );

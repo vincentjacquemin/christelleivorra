@@ -9,6 +9,170 @@
 	Template: zerif-lite
 */
 @import '../zerif-lite/style.css';
+
+@font-face {
+    font-family: "bernadette";
+    src: url('fonts/bernadette.ttf');
+}
+@font-face {
+    font-family: "rockwell-condensed";
+    src: url('fonts/rockwell-condensed.ttf');
+}
+
+body {
+    font-family: 'rockwell-condensed',serif !important;
+}
+
 #client-feedbacks .feedback-box, .testimonial .widget_zerif_testim-widget {
     width: 100%;
+}
+
+
+/* QUI SUIS-JE ? */
+.about-us {
+    text-align: justify;
+    background: #207E74;
+}
+
+.about-us h2 {
+    font-family: 'bernadette',sans-serif !important;
+    text-transform: capitalize;
+    font-weight: normal;
+    text-align: left;
+    width: 100%;
+}
+
+.about-us .col-md-12.zerif_about_us_center p {
+    text-align: justify;
+    color: white;
+    font-size: 16pt;
+}
+
+.about-us .col-md-12.zerif_about_us_center p .highlight {
+    color: #FFC637;
+    font-size: 16pt;
+}
+
+
+/* MES EXPERIENCES */
+.testimonial {
+    background: #DBDBD9;
+}
+
+.testimonial h2 {
+    color: #207E74;
+    font-family: 'bernadette',sans-serif !important;
+    text-transform: capitalize;
+    font-weight: normal;
+    text-align: left;
+    width: 100%;
+}
+
+.testimonial .feedback-box {
+    border: #207E74 solid 3px;
+}
+
+/* Box title */
+.testimonial .feedback-box .message h4 {
+    font-size: 16pt;
+}
+
+/* Box title */
+.testimonial .feedback-box .message h4 span.highlight {
+    color: #FFC637;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.testimonial .feedback-box .message h4 span.title {
+    color: #207E74;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+/* Box place */
+.testimonial .feedback-box .message div.place {
+    color: #207E74;
+    font-size: 16pt;
+}
+
+.testimonial .feedback-box .message div.place .highlight {
+    color: #FFC637;
+    font-size: 16pt;
+}
+
+/* Box list */
+.testimonial .feedback-box .message ul {
+    list-style-type: none;
+}
+
+.testimonial .feedback-box .message ul li {
+    color: black;
+    font-size: 16pt;
+    text-align: justify;
+    margin-left: -4.8%;
+}
+
+.testimonial .feedback-box .message ul li .highlight {
+    color: #FFC637;
+    font-size: 16pt;
+}
+
+.testimonial .feedback-box .message ul li .title {
+    color: #207E74;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.testimonial .feedback-box .message ul li .important {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+
+/* MES COMPETENCES */
+.our-team {
+    background: #207E74;
+    color: white;
+    text-align: justify;
+    font-size: 16pt;
+}
+
+.our-team h2 {
+    color: white;
+    font-family: 'bernadette',sans-serif !important;
+    text-transform: capitalize;
+    font-weight: normal;
+    text-align: left;
+    width: 100%;
+}
+
+.our-team p {
+    font-size: 16pt;
+}
+
+.about-us p .highlight {
+    color: #FFC637;
+    font-size: 16pt;
+}
+
+
+/* ME CONTACTER */
+.contact-us {
+    background: #DBDBD9;
+}
+
+.contact-us h2 {
+    color: #207E74;
+    font-family: 'bernadette',sans-serif !important;
+    text-transform: capitalize;
+    font-weight: normal;
+    text-align: left;
+    width: 100%;
+}
+
+.contact-us input, .contact-us textarea {
+    font-family: 'rockwell-condensed',serif !important;
+    font-size: 16pt;
+    color: #8b8b8b;
 }
