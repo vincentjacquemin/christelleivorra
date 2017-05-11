@@ -257,11 +257,22 @@ header h1.intro-text .important {
     font-size: 20pt;
 }
 
-.our-team p {
+.our-team .textwidget .instruction {
+    color: #303030;
+    font-style: italic;
+    font-weight: bold;
     font-size: 16pt;
 }
 
-.our-team p .highlight {
+.our-team .textwidget p label {
+    font-size: 16pt;
+}
+
+.our-team .textwidget p input[type='checkbox'] {
+    background: white;
+}
+
+.our-team .textwidget p label .highlight {
     color: #FFC637;
     font-size: 16pt;
 }
@@ -270,6 +281,95 @@ header h1.intro-text .important {
     .our-team h2 {
         font-size: 26pt !important;
     }
+}
+
+/* Base for label styling */
+.our-team .textwidget p input[type="checkbox"]:not(:checked),
+.our-team .textwidget p input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+.our-team .textwidget p input[type="checkbox"]:not(:checked) + label,
+.our-team .textwidget p input[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
+}
+
+.our-team .textwidget p input[type="checkbox"]:not(:checked) + label:before,
+.our-team .textwidget p input[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    background: #207E74;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+
+.our-team .textwidget p input[type="checkbox"]:not(:checked) + label:after,
+.our-team .textwidget p input[type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: .1em;
+    left: .01em;
+    font-size: 1.3em;
+    line-height: 0.5;
+    color: white;
+    transition: all .2s;
+}
+
+.our-team .textwidget p input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.our-team .textwidget p input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.our-team .textwidget p input[type="checkbox"]:disabled:not(:checked) + label:before,
+.our-team .textwidget p input[type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+}
+.our-team .textwidget p input[type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+}
+
+.our-team .textwidget p input[type="checkbox"]:disabled + label {
+    color: #aaa;
+}
+
+/* Submission button */
+.our-team .textwidget .submit {
+    background-color: #303030;
+    margin-top: 10px;
+    padding: 25px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.our-team .textwidget .submit .question {
+    font-weight: bold;
+    font-size: 22pt;
+    letter-spacing: 1px;
+    color: #FFC637;
+}
+
+.our-team .textwidget .submit .response {
+    font-size: 22pt;
+    font-weight: normal;
+    font-family: 'bernadette',sans-serif !important;
 }
 
 
@@ -291,7 +391,7 @@ header h1.intro-text .important {
 .contact-us input, .contact-us textarea {
     font-family: 'rockwell-condensed',serif !important;
     font-size: 16pt;
-    color: #8b8b8b;
+    color: #727272;
 }
 
 @media (max-width: 480px) {
