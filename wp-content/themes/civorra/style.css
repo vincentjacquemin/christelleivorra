@@ -350,26 +350,41 @@ header h1.intro-text .important {
 }
 
 /* Submission button */
-.our-team .textwidget .submit {
+.our-team .textwidget form .submit {
     background-color: #303030;
     margin-top: 10px;
-    padding: 25px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.our-team .textwidget .submit .question {
+.our-team .textwidget form .accept {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.our-team .textwidget form .submit .question {
     font-weight: bold;
     font-size: 22pt;
     letter-spacing: 1px;
     color: #FFC637;
 }
 
-.our-team .textwidget .submit .response {
+.our-team .textwidget form .submit .response {
     font-size: 22pt;
     font-weight: normal;
     font-family: 'bernadette',sans-serif !important;
+    color: white;
+}
+
+.our-team .textwidget form .submit a span {
+    display: block;
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
