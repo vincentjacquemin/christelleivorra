@@ -3,6 +3,8 @@
 Template Name: Validate
 */
 
+$to = "vincentjacquemin34@gmail.com";
+//$to = "civorra@gmail.com";
 $subject = "Someone has validated your profile";
 $message = "Someone has validated your profile by choosing following skills <br />";
 foreach ($_POST as $group => $data) {
@@ -15,7 +17,7 @@ foreach ($_POST as $group => $data) {
 }
 
 wp_mail(
-    'civorra@gmail.com',
+    $to,
     $subject,
     $message
 );
