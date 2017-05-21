@@ -129,6 +129,14 @@ header h1.intro-text .important {
     font-size: 20pt;
 }
 
+.about-us table {
+    border: none;
+}
+
+.about-us table tr td {
+    border: none;
+}
+
 .about-us .col-md-12.zerif_about_us_center p {
     text-align: justify;
     color: white;
