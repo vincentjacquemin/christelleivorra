@@ -12,11 +12,15 @@
 
 @font-face {
     font-family: "bernadette";
-    src: url('fonts/bernadette.ttf');
+    src: url('http://test.civorra.fr/wp-content/themes/civorra/fonts/bernadette.ttf');
 }
 @font-face {
     font-family: "rockwell-condensed";
-    src: url('fonts/rockwell-condensed.ttf');
+    src: url('http://test.civorra.fr/wp-content/themes/civorra/fonts/rockwell-condensed.ttf');
+}
+@font-face {
+    font-family: "rockwell-condensed-bold";
+    src: url('http://test.civorra.fr/wp-content/themes/civorra/fonts/rockwell-condensed-bold.ttf');
 }
 
 body {
@@ -71,17 +75,17 @@ header .navbar-inverse .navbar-nav>li>a {
 }
 
 header .navbar-inverse .navbar-nav>li>a:before {
-    background: #207E74;
+    background: #50848B;
 }
 
 header .navbar-inverse .navbar-nav>li.current>a,
 header .navbar-inverse .navbar-nav>li.link-focus>a {
-    color: #207E74;
+    color: #50848B;
 }
 
 header .navbar-inverse .navbar-nav>li>a:hover,
 header .navbar-inverse .navbar-toggle>li>a:focus {
-    color: #207E74 !important;
+    color: #50848B !important;
 }
 
 
@@ -111,46 +115,101 @@ header h1.intro-text .important {
 /* QUI SUIS-JE ? */
 .about-us {
     text-align: justify;
-    background: #207E74;
+    background: #50848B;
     padding-top: 10px;
 }
 
-.about-us h2 {
+.about-us .section-header {
+    padding-bottom: 0;
+}
+
+section .section-header h2 {
+    margin-top: 50px;
+}
+
+.about-us .section-header h2 {
     font-family: 'bernadette',sans-serif !important;
     text-transform: none;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
     width: 100%;
-    margin-top: 0;
     margin-bottom: 0;
+}
+
+.about-us div.image-wrapper {
+    margin-bottom: 15px;
+}
+
+.about-us div.image-wrapper img {
+    margin: auto;
 }
 
 .about-us h3 {
     font-size: 20pt;
-}
-
-.about-us table {
-    border: none;
+    text-align: center;
 }
 
 .about-us table tr td {
     border: none;
 }
 
+.about-us table tr td img {
+    width: 150px;
+}
+
 .about-us .col-md-12.zerif_about_us_center p {
-    text-align: justify;
+    text-align: center;
     color: white;
     font-size: 16pt;
 }
 
 .about-us .col-md-12.zerif_about_us_center p .highlight {
-    color: #FFC637;
+    color: #F2CC59;
+    font-size: 16pt;
+}
+
+.about-us div.presentation div.image-wrapper,
+.about-us div.organisation div.image-wrapper {
+    float: left;
+    margin-right: 1%;
+}
+
+.about-us div.smile div.image-wrapper {
+    float: right;
+    margin-left: 1%;
+}
+
+.about-us div.image-wrapper img {
+    display: block;
+    width: 25%;
+}
+
+.about-us div.image-wrapper legend img {
+    width: 35%;
+}
+
+.about-us table {
+    border: none;
+}
+
+.about-us table.hobbies tr td div.image-wrapper legend {
+    text-align: center;
+}
+
+.about-us table.hobbies tr td span.legend {
+    color: white;
     font-size: 16pt;
 }
 
 @media (max-width: 480px) {
     .about-us h2 {
         font-size: 26pt !important;
+    }
+
+    .about-us div.image-wrapper {
+        float: right;
+        margin-right: 0;
+        margin-left: 5%;
     }
 }
 
@@ -166,16 +225,16 @@ header h1.intro-text .important {
 }
 
 .testimonial h2 {
-    color: #207E74;
+    color: #50848B;
     font-family: 'bernadette',sans-serif !important;
     text-transform: none;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
     width: 100%;
 }
 
 .testimonial .feedback-box {
-    border: #207E74 solid 2px;
+    border: #50848B solid 2px;
 }
 
 /* Box title */
@@ -185,25 +244,25 @@ header h1.intro-text .important {
 
 /* Box title */
 .testimonial .feedback-box .message h4 span.highlight {
-    color: #FFC637;
+    color: #F2CC59;
     font-size: 16pt;
     font-weight: bold;
 }
 
 .testimonial .feedback-box .message h4 span.title {
-    color: #207E74;
+    color: #50848B;
     font-size: 16pt;
     font-weight: bold;
 }
 
 /* Box place */
 .testimonial .feedback-box .message div.place {
-    color: #207E74;
+    color: #50848B;
     font-size: 16pt;
 }
 
 .testimonial .feedback-box .message div.place .highlight {
-    color: #FFC637;
+    color: #F2CC59;
     font-size: 16pt;
 }
 
@@ -221,12 +280,12 @@ header h1.intro-text .important {
 }
 
 .testimonial .feedback-box .message ul li .highlight {
-    color: #FFC637;
+    color: #F2CC59;
     font-size: 16pt;
 }
 
 .testimonial .feedback-box .message ul li .title {
-    color: #207E74;
+    color: #50848B;
     font-weight: bold;
     font-size: 16pt;
 }
@@ -245,9 +304,9 @@ header h1.intro-text .important {
 
 /* MES COMPETENCES */
 .our-team {
-    background: #207E74;
+    background: #50848B;
     color: white;
-    text-align: justify;
+    text-align: left;
     font-size: 16pt;
     padding-top: 10px;
 }
@@ -257,12 +316,8 @@ header h1.intro-text .important {
     font-family: 'bernadette',sans-serif !important;
     text-transform: none;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
     width: 100%;
-}
-
-.our-team h3 {
-    font-size: 20pt;
 }
 
 .our-team .textwidget .instruction {
@@ -270,43 +325,68 @@ header h1.intro-text .important {
     font-style: italic;
     font-weight: bold;
     font-size: 16pt;
+    margin-bottom: 10px;
 }
 
-.our-team .textwidget p label {
+.our-team .textwidget div.competences {
+    margin-bottom: 250px;
+}
+
+.our-team .textwidget div.competences h3 {
+    font-size: 20pt;
+    border: solid 1px white;
+    color: white;
+    padding-left: 15px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.our-team .textwidget div.competences ul {
+    padding: 0;
+    margin-bottom: 100px;
+    list-style-type: none;
+}
+
+.our-team .textwidget div.competences ul li {
+    float: left; /*pour IE*/
+    width: 33%;
+    padding-right: 10px;
+}
+
+.our-team .textwidget div.competences ul li label {
     font-size: 16pt;
 }
 
-.our-team .textwidget p input[type='checkbox'] {
+.our-team .textwidget div.competences ul li input[type='checkbox'] {
     background: white;
 }
 
-.our-team .textwidget p label .highlight {
-    color: #FFC637;
+.our-team .textwidget ul li label .highlight {
+    color: #F2CC59;
     font-size: 16pt;
 }
 
-@media (max-width: 480px) {
-    .our-team h2 {
-        font-size: 26pt !important;
-    }
+.our-team .textwidget div.competences ul li label .star {
+    font-size: 16pt;
 }
 
 /* Base for label styling */
-.our-team .textwidget p input[type="checkbox"]:not(:checked),
-.our-team .textwidget p input[type="checkbox"]:checked {
+.our-team .textwidget div.competences ul li input[type="checkbox"]:not(:checked),
+.our-team .textwidget div.competences ul li input[type="checkbox"]:checked {
     position: absolute;
     left: -9999px;
 }
 
-.our-team .textwidget p input[type="checkbox"]:not(:checked) + label,
-.our-team .textwidget p input[type="checkbox"]:checked + label {
+.our-team .textwidget div.competences ul li input[type="checkbox"]:not(:checked) + label,
+.our-team .textwidget div.competences ul li input[type="checkbox"]:checked + label {
     position: relative;
-    padding-left: 1.95em;
-    cursor: pointer;
+    padding-left: 1.5em;
 }
 
-.our-team .textwidget p input[type="checkbox"]:not(:checked) + label:before,
-.our-team .textwidget p input[type="checkbox"]:checked + label:before {
+.our-team .textwidget div.competences ul li input[type="checkbox"]:not(:checked) + label:before,
+.our-team .textwidget div.competences ul li input[type="checkbox"]:checked + label:before {
+    margin-top: 3px;
     content: '';
     position: absolute;
     left: 0; top: 0;
@@ -316,13 +396,13 @@ header h1.intro-text .important {
     border-left: 2px solid white;
     border-bottom: 4px solid white;
     border-right: 4px solid white;
-    background: #207E74;
+    background: #50848B;
     border-radius: 4px;
     box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
 }
 
-.our-team .textwidget p input[type="checkbox"]:not(:checked) + label:after,
-.our-team .textwidget p input[type="checkbox"]:checked + label:after {
+.our-team .textwidget div.competences ul li input[type="checkbox"]:not(:checked) + label:after,
+.our-team .textwidget div.competences ul li input[type="checkbox"]:checked + label:after {
     content: '✔';
     position: absolute;
     top: .1em;
@@ -333,27 +413,27 @@ header h1.intro-text .important {
     transition: all .2s;
 }
 
-.our-team .textwidget p input[type="checkbox"]:not(:checked) + label:after {
+.our-team .textwidget div.competences ul li input[type="checkbox"]:not(:checked) + label:after {
     opacity: 0;
     transform: scale(0);
 }
 
-.our-team .textwidget p input[type="checkbox"]:checked + label:after {
+.our-team .textwidget div.competences ul li input[type="checkbox"]:checked + label:after {
     opacity: 1;
     transform: scale(1);
 }
 
-.our-team .textwidget p input[type="checkbox"]:disabled:not(:checked) + label:before,
-.our-team .textwidget p input[type="checkbox"]:disabled:checked + label:before {
+.our-team .textwidget div.competences ul li input[type="checkbox"]:disabled:not(:checked) + label:before,
+.our-team .textwidget div.competences ul li input[type="checkbox"]:disabled:checked + label:before {
     box-shadow: none;
     border-color: #bbb;
     background-color: #ddd;
 }
-.our-team .textwidget p input[type="checkbox"]:disabled:checked + label:after {
+.our-team .textwidget div.competences ul li input[type="checkbox"]:disabled:checked + label:after {
     color: #999;
 }
 
-.our-team .textwidget p input[type="checkbox"]:disabled + label {
+.our-team .textwidget div.competences ul li input[type="checkbox"]:disabled + label {
     color: #aaa;
 }
 
@@ -377,7 +457,7 @@ header h1.intro-text .important {
     font-weight: bold;
     font-size: 22pt;
     letter-spacing: 1px;
-    color: #FFC637;
+    color: #F2CC59;
 }
 
 .our-team .textwidget form .submit .response {
@@ -395,6 +475,20 @@ header h1.intro-text .important {
     padding-bottom: 5px;
 }
 
+@media (max-width: 480px) {
+    .our-team h2 {
+        font-size: 26pt !important;
+    }
+
+    .our-team .textwidget div.competences {
+        margin-bottom: 350px;
+    }
+
+    .our-team .textwidget div.competences ul li {
+        width: 100%;
+    }
+}
+
 
 /* ME CONTACTER */
 .contact-us {
@@ -403,11 +497,11 @@ header h1.intro-text .important {
 }
 
 .contact-us h2 {
-    color: #207E74;
+    color: #50848B;
     font-family: 'bernadette',sans-serif !important;
     text-transform: none;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
     width: 100%;
 }
 
