@@ -564,6 +564,11 @@ section .section-header h2 {
     color: #727272;
 }
 
+.contact-us button {
+    background-color: #50848B;
+}
+
+
 footer .company-details .icon-top img {
     width: 80px;
 }
@@ -608,11 +613,11 @@ body.page-id-274 h2 .highlight {
     margin-bottom: 40px;
 }
 
-body.page-id-274 .profile {
+body.page-id-274 .photo-id {
     text-align: center;
 }
 
-body.page-id-274 .profile img {
+body.page-id-274 .photo-id img {
     width: 200px;
 }
 
