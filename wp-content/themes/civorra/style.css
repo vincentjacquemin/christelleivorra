@@ -27,6 +27,10 @@ body {
     font-family: 'rockwell-condensed',serif !important;
 }
 
+body.home header ul .menu-item-object-page {
+    display: none;
+}
+
 /* HEADER TITLE */
 header .header-content-wrap {
     background: rgba(0, 0, 0, 0.6);
@@ -88,7 +92,6 @@ header .navbar-inverse .navbar-nav>li>a:hover,
 header .navbar-inverse .navbar-toggle>li>a:focus {
     color: #50848B !important;
 }
-
 
 /* HEADER */
 header h1.intro-text {
@@ -577,6 +580,10 @@ body.page-id-274 .site-content {
     background: #DBDBD9;
 }
 
+body.page-id-274 .menu-item-object-custom {
+    display: none;
+}
+
 body.page-id-274 .entry-header {
     display: none;
 }
@@ -610,7 +617,7 @@ body.page-id-274 .profile img {
 }
 
 body.page-id-274 div.contact {
-    background: #F8D664;
+    background: #50848B;
     -moz-border-radius: 30px;
     -webkit-border-radius: 30px;
     border-radius: 30px;
@@ -618,11 +625,11 @@ body.page-id-274 div.contact {
     margin: auto;
     margin-top: 40px;
     width: 70%;
-    border: solid 2px #50848B;
+    color: white;
 }
 
 body.page-id-274 div.contact h3 {
-    color: #50848B;
+    color: white;
     font-family: 'bernadette',serif !important;
     text-align: center;
     padding-top: 50px;
@@ -630,11 +637,11 @@ body.page-id-274 div.contact h3 {
     font-size: 40pt;
     width: 80%;
     margin: auto;
-    border-bottom: dotted 3px #50848B
+    border-bottom: dotted 3px white;
 }
 
 body.page-id-274 div.contact .choice {
-    color: #505050;
+    color: white;;
     font-size: 22pt;
     text-align: center;
     margin-top: 50px;
@@ -642,7 +649,7 @@ body.page-id-274 div.contact .choice {
 }
 
 body.page-id-274 div.contact .choice .highlight {
-    color: #505050;
+    color: white;;
     font-size: 22pt;
     text-align: center;
     margin-top: 50px;
@@ -670,7 +677,7 @@ body.page-id-274 div.contact table tr td .img-wrapper img {
 }
 
 body.page-id-274 div.contact .choice .details {
-    color: #505050;
+    color: white;
     font-size: 22pt;
     text-align: center;
     margin-top: 50px;
@@ -679,7 +686,7 @@ body.page-id-274 div.contact .choice .details {
 }
 
 body.page-id-274 div.contact .choice .details .highlight {
-    color: #505050;
+    color: white;
     font-size: 22pt;
     text-align: center;
     margin-top: 50px;
@@ -690,4 +697,101 @@ body.page-id-274 div.contact .choice .details .highlight {
 body.page-id-274 div.contact .choice .coffee img {
     width: 150px;
     margin-top: 30px;
+}
+
+
+/* FORMULAIRE VALIDE */
+body.page-form-accept {
+    background: #DBDBD9;
+}
+
+body.page-form-accept div.main-content h2 {
+    color: #50848B;
+    font-family: 'rockwell-condensed',serif !important;
+    text-align: center;
+    font-size: 35pt;
+    line-height: 120%;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+body.page-form-accept div.main-content .competences ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+body.page-form-accept div.main-content .competences ul li {
+    color: #505050;
+    font-size: 22pt;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'rockwell-condensed',serif !important;
+    font-weight: bold;
+}
+
+body.page-form-accept div.main-content .competences ul li .highlight {
+    color: #F8D664;
+    font-size: 22pt;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'rockwell-condensed',serif !important;
+    font-weight: bold;
+}
+
+body.page-form-accept div.main-content .photo-id {
+    text-align: center;
+}
+
+body.page-form-accept div.main-content .photo-id img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+body.page-form-accept div.main-content .response {
+    color: #50848B;
+    font-family: 'rockwell-condensed',serif !important;
+    text-align: center;
+    font-size: 28pt;
+    line-height: 120%;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+body.page-form-accept div.main-content .contact {
+    background: #50848B;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    color: white;
+    font-size: 22pt;
+}
+
+body.page-form-accept div.main-content .contact h3 {
+    color: white;
+    font-family: 'bernadette',serif !important;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 40pt;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    border-bottom: dotted 3px white
+}
+
+body.page-form-accept div.main-content .contact .contact-methods {
+    font-size: 22pt;
+}
+
+body.page-form-accept div.main-content .contact .contact-methods a {
+    font-size: 22pt;
+    color: white;
+    text-decoration: underline;
 }
