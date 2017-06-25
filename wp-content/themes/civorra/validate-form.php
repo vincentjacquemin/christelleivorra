@@ -18,6 +18,31 @@ $skillsMatching = [
     'proactivity' => 'Proactivité',
     'collaboration' => 'Collaboration efficace avec des partenaires aux profils variés'
 ];
+
+if (!isset($_POST) || empty($_POST)) {
+    header('Location: http://www.civorra.fr');
+}
+else {
+    $to = "vincentjacquemin34@gmail.com";
+    $subject = "Civorra - Un recruteur vous recherche";
+
+    $headers = "From: christelleivorra@gmail.com\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+    $message = "<div>Voici les compétences que le recruteur a coché : </div>";
+    $message .= "<ul>";
+    foreach ($_POST as $categoryLabel => $categoryData) {
+        foreach ($categoryData as $label => $value) {
+            if (isset($skillsMatching[$label])) {
+                $message .= "<li>" . $skillsMatching[$label] . "</li>";
+            }
+        }
+    }
+    $message .= "</ul>";
+
+    mail($to, $subject, $message, $headers);
+}
 ?>
 
 <!DOCTYPE html>
@@ -159,21 +184,21 @@ $skillsMatching = [
 
             <footer id="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
                 <div class="container">
-                    <div class="col-md-3 linkedin-details">
+                    <div class="col-md-3 company-details">
                         <div class="icon-top red-text">
-                            <a href="https://www.linkedin.com/profile/christelleivorra" title="Viadeo"><img src="http://test.civorra.fr/wp-content/uploads/2017/06/lnkd.png" alt="linkedin">
+                            <a href="https://www.linkedin.com/profile/christelleivorra" title="Linkedin"><img src="http://test.civorra.fr/wp-content/uploads/2017/06/lnkd.png" alt="linkedin">
                         </div>
                     </div>
 
-                    <div class="col-md-3 viadeo-details">
+                    <div class="col-md-3 company-details">
                         <div class="icon-top green-text">
-                            <a href="https://www.viadeo.com/profile/christelleivorra" title="Linkedin"><img src="http://test.civorra.fr/wp-content/uploads/2017/06/viadeo.png" alt="viadeo">
+                            <a href="https://www.viadeo.com/profile/christelleivorra" title="Viadeo"><img src="http://test.civorra.fr/wp-content/uploads/2017/06/viadeo.png" alt="viadeo">
                         </div>
                     </div>
 
-                    <div class="col-md-3 tel-details">
+                    <div class="col-md-3 company-details">
                         <div class="icon-top blue-text">
-                            <a href="tel:0675885168" title="Téléphone"><img src="http://test.civorra.fr/wp-content/uploads/2017/06/phone.png" alt="telephone">
+                            <a href="tel:0675885168" title="Telephone"><img src="http://test.civorra.fr/wp-content/uploads/2017/06/phone.png" alt="telephone">
                         </div>
                         <div class="zerif-footer-phone">06 75 88 51 68</div>
                     </div>
