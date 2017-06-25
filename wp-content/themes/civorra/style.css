@@ -29,11 +29,12 @@ body {
 
 /* HEADER TITLE */
 header .header-content-wrap {
-    background: none;
+    background: rgba(0, 0, 0, 0.6);
+    height: 700px;
 }
 
 header .navbar-inverse {
-    background: #303030;
+    background: #404040;
 }
 
 header .navbar-inverse .navbar-brand .site-title a {
@@ -91,18 +92,19 @@ header .navbar-inverse .navbar-toggle>li>a:focus {
 
 /* HEADER */
 header h1.intro-text {
+    margin: auto;
     font-family: 'rockwell-condensed',serif !important;
     text-transform: none;
     font-weight: normal;
-    width: 60%;
-    text-align: right;
-    float: right;
+    width: 100%;
+    text-align: center;
     line-height: 150%;
-    color: black;
+    color: white;
+    text-shadow:0 0 100px black;
+    font-size: 70px;
 }
 
 header h1.intro-text .important {
-    font-size: 55px;
     font-weight: bold;
 }
 
@@ -119,12 +121,16 @@ header h1.intro-text .important {
     padding-top: 10px;
 }
 
+.about-us .zerif_about_us_center {
+    margin-bottom: 0;
+}
+
 .about-us .section-header {
     padding-bottom: 0;
 }
 
 section .section-header h2 {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .about-us .section-header h2 {
@@ -133,7 +139,7 @@ section .section-header h2 {
     font-weight: normal;
     text-align: center;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 .about-us div.image-wrapper {
@@ -145,8 +151,14 @@ section .section-header h2 {
 }
 
 .about-us h3 {
+    margin-top: 40px;
     font-size: 20pt;
     text-align: center;
+}
+
+.about-us p {
+    margin: 0;
+    height: 0;
 }
 
 .about-us table tr td {
@@ -157,14 +169,14 @@ section .section-header h2 {
     width: 150px;
 }
 
-.about-us .col-md-12.zerif_about_us_center p {
+.about-us .col-md-12.zerif_about_us_center div {
     text-align: center;
     color: white;
     font-size: 16pt;
 }
 
-.about-us .col-md-12.zerif_about_us_center p .highlight {
-    color: #F2CC59;
+.about-us .col-md-12.zerif_about_us_center div .highlight {
+    color: #F8D664;
     font-size: 16pt;
 }
 
@@ -188,7 +200,8 @@ section .section-header h2 {
     width: 35%;
 }
 
-.about-us table {
+.about-us table.hobbies {
+    margin-bottom: 0;
     border: none;
 }
 
@@ -218,10 +231,15 @@ section .section-header h2 {
 .testimonial {
     background: #DBDBD9;
     padding-top: 10px;
+    padding-bottom: 40px;
 }
 
 #client-feedbacks .feedback-box, .testimonial .widget_zerif_testim-widget {
     width: 100%;
+}
+
+.testimonial .section-header {
+    padding-bottom: 20px;
 }
 
 .testimonial h2 {
@@ -244,7 +262,7 @@ section .section-header h2 {
 
 /* Box title */
 .testimonial .feedback-box .message h4 span.highlight {
-    color: #F2CC59;
+    color: #F8D664;
     font-size: 16pt;
     font-weight: bold;
 }
@@ -255,20 +273,15 @@ section .section-header h2 {
     font-weight: bold;
 }
 
-/* Box place */
-.testimonial .feedback-box .message div.place {
+.testimonial .feedback-box .message h4 span.details {
     color: #50848B;
-    font-size: 16pt;
-}
-
-.testimonial .feedback-box .message div.place .highlight {
-    color: #F2CC59;
     font-size: 16pt;
 }
 
 /* Box list */
 .testimonial .feedback-box .message ul {
     list-style-type: none;
+    margin-bottom: 0;
 }
 
 .testimonial .feedback-box .message ul li {
@@ -276,11 +289,11 @@ section .section-header h2 {
     font-size: 16pt;
     text-align: justify;
     margin-left: -48px;
-    line-height: 100%;
+    line-height: 150%;
 }
 
 .testimonial .feedback-box .message ul li .highlight {
-    color: #F2CC59;
+    color: #F8D664;
     font-size: 16pt;
 }
 
@@ -311,6 +324,10 @@ section .section-header h2 {
     padding-top: 10px;
 }
 
+.our-team .section-header {
+    padding-bottom: 40px;
+}
+
 .our-team h2 {
     color: white;
     font-family: 'bernadette',sans-serif !important;
@@ -321,11 +338,16 @@ section .section-header h2 {
 }
 
 .our-team .textwidget .instruction {
-    color: #303030;
-    font-style: italic;
+    color: white;
+    font-size: 16pt;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.our-team .textwidget .instruction .highlight {
     font-weight: bold;
     font-size: 16pt;
-    margin-bottom: 10px;
+    color: #F8D664;
 }
 
 .our-team .textwidget div.competences {
@@ -334,12 +356,14 @@ section .section-header h2 {
 
 .our-team .textwidget div.competences h3 {
     font-size: 20pt;
-    border: solid 1px white;
+    border-bottom: dotted 1px white;
     color: white;
     padding-left: 15px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+}
+
+.our-team .textwidget div.competences h3 .highlight {
+    font-size: 20pt;
+    font-weight: bold;
 }
 
 .our-team .textwidget div.competences ul {
@@ -363,7 +387,7 @@ section .section-header h2 {
 }
 
 .our-team .textwidget ul li label .highlight {
-    color: #F2CC59;
+    color: #F8D664;
     font-size: 16pt;
 }
 
@@ -429,6 +453,7 @@ section .section-header h2 {
     border-color: #bbb;
     background-color: #ddd;
 }
+
 .our-team .textwidget div.competences ul li input[type="checkbox"]:disabled:checked + label:after {
     color: #999;
 }
@@ -439,7 +464,7 @@ section .section-header h2 {
 
 /* Submission button */
 .our-team .textwidget form .submit {
-    background-color: #303030;
+    background-color: #404040;
     margin-top: 10px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -447,32 +472,53 @@ section .section-header h2 {
     cursor: pointer;
 }
 
-.our-team .textwidget form .accept {
-    padding-left: 25px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+.our-team .textwidget form .submit .text {
+    display: inline-block;
+    width: 85%;
+    vertical-align: middle;
 }
 
-.our-team .textwidget form .submit .question {
-    font-weight: bold;
+.our-team .textwidget form .submit .text .question {
     font-size: 22pt;
     letter-spacing: 1px;
-    color: #F2CC59;
+    color: #F8D664;
 }
 
-.our-team .textwidget form .submit .response {
+.our-team .textwidget form .submit .text .response {
     font-size: 22pt;
     font-weight: normal;
     font-family: 'bernadette',sans-serif !important;
     color: white;
 }
 
-.our-team .textwidget form .submit a span {
+.our-team .textwidget form .submit .text {
+    text-decoration: none;
+}
+
+.our-team .textwidget form .submit .text span {
     display: block;
     width: 100%;
     padding-left: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.our-team .textwidget form .submit .img-wrapper {
+    padding: 0;
+    margin-right: 20px;
+    display: inline-block;
+    width: 70px;
+    margin-left: 6%;
+}
+
+.our-team .textwidget form .submit .img-wrapper a img {
+    width: 70px;
+}
+
+@media (max-width: 1200px) {
+    .our-team .textwidget form .submit .img-wrapper {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -496,6 +542,10 @@ section .section-header h2 {
     padding-top: 10px;
 }
 
+.contact-us .section-header {
+    padding-bottom: 40px;
+}
+
 .contact-us h2 {
     color: #50848B;
     font-family: 'bernadette',sans-serif !important;
@@ -511,8 +561,133 @@ section .section-header h2 {
     color: #727272;
 }
 
+footer .company-details .icon-top img {
+    width: 80px;
+}
+
 @media (max-width: 480px) {
     .contact-us h2 {
         font-size: 26pt !important;
     }
+}
+
+
+/* RESTONS EN CONTACT */
+body.page-id-274 .site-content {
+    background: #DBDBD9;
+}
+
+body.page-id-274 .entry-header {
+    display: none;
+}
+
+body.page-id-274 h2 {
+    color: #50848B;
+    font-family: 'rockwell-condensed',serif !important;
+    text-align: center;
+    font-size: 35pt;
+    line-height: 120%;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+body.page-id-274 h2 .highlight {
+    color: #50848B;
+    font-family: 'rockwell-condensed',serif !important;
+    text-align: center;
+    font-size: 35pt;
+    line-height: 120%;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+body.page-id-274 .profile {
+    text-align: center;
+}
+
+body.page-id-274 .profile img {
+    width: 200px;
+}
+
+body.page-id-274 div.contact {
+    background: #F8D664;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    margin: auto;
+    margin-top: 40px;
+    width: 70%;
+    border: solid 2px #50848B;
+}
+
+body.page-id-274 div.contact h3 {
+    color: #50848B;
+    font-family: 'bernadette',serif !important;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 40pt;
+    width: 80%;
+    margin: auto;
+    border-bottom: dotted 3px #50848B
+}
+
+body.page-id-274 div.contact .choice {
+    color: #505050;
+    font-size: 22pt;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'rockwell-condensed',serif !important;
+}
+
+body.page-id-274 div.contact .choice .highlight {
+    color: #505050;
+    font-size: 22pt;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'rockwell-condensed',serif !important;
+    font-weight: bold;
+}
+
+body.page-id-274 div.contact table {
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+    width: 25%;
+}
+
+body.page-id-274 div.contact table tr td{
+    border: none
+}
+
+body.page-id-274 div.contact table tr td .img-wrapper {
+    text-align: center;
+}
+
+body.page-id-274 div.contact table tr td .img-wrapper img {
+    width: 100px;
+}
+
+body.page-id-274 div.contact .choice .details {
+    color: #505050;
+    font-size: 22pt;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'rockwell-condensed',serif !important;
+    line-height: 150%;
+}
+
+body.page-id-274 div.contact .choice .details .highlight {
+    color: #505050;
+    font-size: 22pt;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'rockwell-condensed',serif !important;
+    font-weight: bold;
+}
+
+body.page-id-274 div.contact .choice .coffee img {
+    width: 150px;
+    margin-top: 30px;
 }

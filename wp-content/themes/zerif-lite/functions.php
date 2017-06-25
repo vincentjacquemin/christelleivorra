@@ -78,6 +78,9 @@ function zerif_setup() {
 
 	/* Customizer additions. */
 	require get_template_directory() . '/inc/customizer.php';
+	
+	/* tgm-plugin-activation */
+	require_once get_template_directory() . '/class-tgm-plugin-activation.php';
 
 	/* preview demo */
 	require_once get_template_directory() . '/ti-prevdem/init-prevdem.php';
@@ -458,7 +461,7 @@ function zerif_setup() {
 		'activate_button_label' => esc_html__( 'Activate', 'zerif-lite' ),
 		'deactivate_button_label' => esc_html__( 'Deactivate', 'zerif-lite' )
 	);
-	Ti_Customizer_Notify::init( $config_customizer );
+	Ti_Customizer_Notify::init( apply_filters( 'zerif_customizer_notify_array', $config_customizer ) );
 
 }
 
@@ -697,6 +700,78 @@ function zerif_remove_yoast_rel_link() {
 add_filter( 'wpseo_prev_rel_link', 'zerif_remove_yoast_rel_link' );
 add_filter( 'wpseo_next_rel_link', 'zerif_remove_yoast_rel_link' );
 
+add_action('tgmpa_register', 'zerif_register_required_plugins');
+function zerif_register_required_plugins() {	
+	
+	$wp_version_nr = get_bloginfo('version');
+	
+	if( $wp_version_nr < 3.9 ):
+		$plugins = array(
+			array(
+				'name' => 'Widget customizer',
+				'slug' => 'widget-customizer', 
+				'required' => false 
+			),
+			array(
+				'name'      => 'Pirate Forms',
+				'slug'      => 'pirate-forms',
+				'required'  => false,
+			),		
+ 			array(		
+ 				'name'      => 'ThemeIsle Companion',		
+ 				'slug'      => 'themeisle-companion',		
+ 				'required'  => false,		
+ 			)
+		);
+		
+	else:
+	
+		$plugins = array(
+			array(
+				'name'      => 'Pirate Forms',
+				'slug'      => 'pirate-forms',
+				'required'  => false,
+			),		
+ 			array(		
+ 				'name'      => 'ThemeIsle Companion',		
+ 				'slug'      => 'themeisle-companion',		
+ 				'required'  => false,		
+ 			)
+		);
+	
+	endif;
+    $config = array(
+        'default_path' => '',
+        'menu' => 'tgmpa-install-plugins',
+        'has_notices' => true,
+        'dismissable' => true,
+        'dismiss_msg' => '',
+        'is_automatic' => false,
+        'message' => '',
+        'strings' => array(
+            'page_title' => __('Install Required Plugins', 'zerif-lite'),
+            'menu_title' => __('Install Plugins', 'zerif-lite'),
+            'installing' => __('Installing Plugin: %s', 'zerif-lite'),
+            'oops' => __('Something went wrong with the plugin API.', 'zerif-lite'),
+            'notice_can_install_required' => _n_noop('This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.','zerif-lite'),
+            'notice_can_install_recommended' => _n_noop('This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.','zerif-lite'),
+            'notice_cannot_install' => _n_noop('Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.','zerif-lite'),
+            'notice_can_activate_required' => _n_noop('The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.','zerif-lite'),
+            'notice_can_activate_recommended' => _n_noop('The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.','zerif-lite'),
+            'notice_cannot_activate' => _n_noop('Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.','zerif-lite'),
+            'notice_ask_to_update' => _n_noop('The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.','zerif-lite'),
+            'notice_cannot_update' => _n_noop('Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.','zerif-lite'),
+            'install_link' => _n_noop('Begin installing plugin', 'Begin installing plugins','zerif-lite'),
+            'activate_link' => _n_noop('Begin activating plugin', 'Begin activating plugins','zerif-lite'),
+            'return' => __('Return to Required Plugins Installer', 'zerif-lite'),
+            'plugin_activated' => __('Plugin activated successfully.', 'zerif-lite'),
+            'complete' => __('All plugins installed and activated successfully. %s', 'zerif-lite'),
+            'nag_type' => 'updated'
+        )
+    );
+    tgmpa($plugins, $config);
+}
+
 /* Load Jetpack compatibility file. */
 
 require get_template_directory() . '/inc/jetpack.php';
@@ -906,6 +981,80 @@ if ( !class_exists( 'zerif_ourfocus' ) && zerif_check_if_old_version_of_theme() 
 
 			return $instance;
 
+		}
+
+		/**
+		 * Widget controls
+		 *
+		 * @param $instance
+		 */
+		function form( $instance ) {
+			?>
+
+			<p>
+				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'zerif-lite' ); ?></label><br/>
+				<input type="text" name="<?php echo $this->get_field_name( 'title' ); ?>"
+				       id="<?php echo $this->get_field_id( 'title' ); ?>"
+				       value="<?php if ( ! empty( $instance['title'] ) ): echo $instance['title']; endif; ?>"
+				       class="widefat">
+			</p>
+			<p>
+				<label
+					for="<?php echo $this->get_field_id( 'text' ); ?>"><?php _e( 'Text', 'zerif-lite' ); ?></label><br/>
+				<textarea class="widefat" rows="8" cols="20" name="<?php echo $this->get_field_name( 'text' ); ?>"
+				          id="<?php echo $this->get_field_id( 'text' ); ?>"><?php if ( ! empty( $instance['text'] ) ): echo htmlspecialchars_decode( $instance['text'] ); endif; ?></textarea>
+			</p>
+			<p>
+				<label
+					for="<?php echo $this->get_field_id( 'link' ); ?>"><?php _e( 'Link', 'zerif-lite' ); ?></label><br/>
+				<input type="text" name="<?php echo $this->get_field_name( 'link' ); ?>"
+				       id="<?php echo $this->get_field_id( 'link' ); ?>"
+				       value="<?php if ( ! empty( $instance['link'] ) ): echo esc_url( $instance['link'] ); endif; ?>"
+				       class="widefat">
+			</p>
+			<p>
+				<label
+					for="<?php echo $this->get_field_id( 'image_uri' ); ?>"><?php _e( 'Image', 'zerif-lite' ); ?></label><br/>
+
+				<?php
+				$image_in_customizer = '';
+				$display             = 'none';
+				if ( ! empty( $instance['image_in_customizer'] ) && ! empty( $instance['image_uri'] ) ) {
+					$image_in_customizer = esc_url( $instance['image_in_customizer'] );
+					$display             = 'inline-block';
+				} else {
+					if ( ! empty( $instance['image_uri'] ) ) {
+						$image_in_customizer = esc_url( $instance['image_uri'] );
+						$display             = 'inline-block';
+					}
+				}
+				$zerif_image_in_customizer = $this->get_field_name( 'image_in_customizer' );
+				?>
+				<input type="hidden" class="custom_media_display_in_customizer"
+				       name="<?php if ( ! empty( $zerif_image_in_customizer ) ) {
+					       echo $zerif_image_in_customizer;
+				       } ?>"
+				       value="<?php if ( ! empty( $instance['image_in_customizer'] ) ): echo $instance['image_in_customizer']; endif; ?>">
+				<img class="custom_media_image" src="<?php echo $image_in_customizer; ?>"
+				     style="margin:0;padding:0;max-width:100px;float:left;display:<?php echo $display; ?>"
+				     alt="<?php echo __( 'Uploaded image', 'zerif-lite' ); ?>"/><br/>
+
+				<input type="text" class="widefat custom_media_url"
+				       name="<?php echo $this->get_field_name( 'image_uri' ); ?>"
+				       id="<?php echo $this->get_field_id( 'image_uri' ); ?>"
+				       value="<?php if ( ! empty( $instance['image_uri'] ) ): echo $instance['image_uri']; endif; ?>"
+				       style="margin-top:5px;">
+
+				<input type="button" class="button button-primary custom_media_button" id="custom_media_button"
+				       name="<?php echo $this->get_field_name( 'image_uri' ); ?>"
+				       value="<?php _e( 'Upload Image', 'zerif-lite' ); ?>" style="margin-top:5px;">
+			</p>
+
+			<input class="custom_media_id" id="<?php echo $this->get_field_id( 'custom_media_id' ); ?>"
+			       name="<?php echo $this->get_field_name( 'custom_media_id' ); ?>" type="hidden"
+			       value="<?php if ( ! empty( $instance["custom_media_id"] ) ): echo $instance["custom_media_id"]; endif; ?>"/>
+
+			<?php
 		}
 
 	}
@@ -1735,3 +1884,18 @@ function zerif_starter_content() {
 
 }
 add_action( 'after_setup_theme', 'zerif_starter_content' );
+
+
+/**
+ * Save activation time.
+ */
+function zerif_time_activated() {
+	update_option( 'zerif_time_activated', time() );
+}
+add_action( 'after_switch_theme', 'zerif_time_activated');
+
+function zerif_bb_upgrade_link() { 
+    return 'https://www.wpbeaverbuilder.com/?fla=101&campaign=zf'; 
+}
+
+add_filter( 'fl_builder_upgrade_url', 'zerif_bb_upgrade_link' );

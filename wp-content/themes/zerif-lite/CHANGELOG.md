@@ -1,4 +1,31 @@
 
+### 1.8.5.24 - 15/06/2017
+**Changes:** 
+- Removed timed upsells
+- Removed recommended actions link when no actions are required
+- Fixed Minify Auto bug with W3 Total Cache
+- Added some hooks and filters for child themes
+
+### 1.8.5.23 - 17/05/2017
+**Changes:** 
+- Fixed Our focus widgets for older version of the theme
+
+### 1.8.5.22 - 16/05/2017
+**Changes:** 
+- Added compatibility with Nivo Slider Lite plugin
+
+### 1.8.5.21 - 11/05/2017
+**Changes:** 
+- Development
+
+### 1.8.5.20 - 08/05/2017
+**Changes:** 
+- Make upsells visible after 12 hours after theme activation
+
+### 1.8.5.19 - 03/05/2017
+**Changes:** 
+- Recommend ThemeIsle Companion plugin with TGM
+
 ### 1.8.5.18 - 27/04/2017
 **Changes:** 
 - Development
