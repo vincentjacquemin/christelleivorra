@@ -494,7 +494,7 @@ section .section-header h2 {
     color: white;
 }
 
-.our-team .textwidget form .submit .text {
+.our-team .textwidget form .submit .text a {
     text-decoration: none;
 }
 
@@ -788,10 +788,33 @@ body.page-form-accept div.main-content .contact h3 {
 
 body.page-form-accept div.main-content .contact .contact-methods {
     font-size: 22pt;
+    margin-bottom: 40px;
 }
 
 body.page-form-accept div.main-content .contact .contact-methods a {
     font-size: 22pt;
     color: white;
+    text-decoration: underline;
+}
+
+
+/* CREDITS IMAGES */
+body.page-id-335 .site-content {
+    background: #DBDBD9;
+}
+
+body.page-id-335 .menu-item-object-custom {
+    display: none;
+}
+
+
+/* FOOTER */
+footer #zerif-copyright .footer-label {
+    color: #666666;
+    vertical-align: middle;
+}
+
+footer #zerif-copyright a {
+    color: #939393;
     text-decoration: underline;
 }

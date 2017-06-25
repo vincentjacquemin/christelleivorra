@@ -159,21 +159,21 @@ $skillsMatching = [
 
             <footer id="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
                 <div class="container">
-                    <div class="col-md-3 company-details">
+                    <div class="col-md-3 linkedin-details">
                         <div class="icon-top red-text">
-                            <img src="http://test.civorra.fr/wp-content/uploads/2017/06/lnkd.png" alt="">
+                            <a href="https://www.linkedin.com/profile/christelleivorra" title="Viadeo"><img src="http://test.civorra.fr/wp-content/uploads/2017/06/lnkd.png" alt="linkedin">
                         </div>
                     </div>
 
-                    <div class="col-md-3 company-details">
+                    <div class="col-md-3 viadeo-details">
                         <div class="icon-top green-text">
-                            <img src="http://test.civorra.fr/wp-content/uploads/2017/06/viadeo.png" alt="">
+                            <a href="https://www.viadeo.com/profile/christelleivorra" title="Linkedin"><img src="http://test.civorra.fr/wp-content/uploads/2017/06/viadeo.png" alt="viadeo">
                         </div>
                     </div>
 
-                    <div class="col-md-3 company-details">
+                    <div class="col-md-3 tel-details">
                         <div class="icon-top blue-text">
-                            <img src="http://test.civorra.fr/wp-content/uploads/2017/06/phone.png" alt="">
+                            <a href="tel:0675885168" title="Téléphone"><img src="http://test.civorra.fr/wp-content/uploads/2017/06/phone.png" alt="telephone">
                         </div>
                         <div class="zerif-footer-phone">06 75 88 51 68</div>
                     </div>
