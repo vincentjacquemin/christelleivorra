@@ -177,8 +177,8 @@ else {
                 <div class="contact">
                     <h3>Contactez-moi</h3>
                     <div class="contact-methods">
-                        par téléphone : 06 75 88 51 68 <br />
-                        par email : christelleivorra@gmail.com <br />
+                        par téléphone : <a href="tel:0675885168" title="Telephone">06 75 88 51 68</a> <br />
+                        par email : <a href="mailto:christelleivorra@gmail.com" title="Email">christelleivorra@gmail.com</a> <br />
                         ou via le <a href="<?php echo $website ?>#contact">formulaire de contact</a>
                     </div>
                 </div>
@@ -200,7 +200,7 @@ else {
 
                     <div class="col-md-3 company-details">
                         <div class="icon-top blue-text">
-                            <a href="tel:0675885168" title="Telephone"><img src="<?php echo $website ?>/wp-content/uploads/2017/06/phone.png" alt="telephone">
+                            <a href="tel:0675885168" title="Telephone"><img src="<?php echo $website ?>/wp-content/uploads/2017/06/phone.png" alt="telephone"></a>
                         </div>
                         <div class="zerif-footer-phone">06 75 88 51 68</div>
                     </div>
