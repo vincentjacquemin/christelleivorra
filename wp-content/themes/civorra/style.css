@@ -111,11 +111,6 @@ header h1.intro-text .important {
     font-weight: bold;
 }
 
-@media (max-width: 992px) {
-    .section-header {
-        padding-bottom: 0;
-    }
-}
 
 /* QUI SUIS-JE ? */
 .about-us {
@@ -203,30 +198,27 @@ section .section-header h2 {
     width: 35%;
 }
 
-.about-us table.hobbies {
-    margin-bottom: 0;
-    border: none;
+.about-us div.hobbies {
+    margin-bottom: 40px;
 }
 
-.about-us table.hobbies tr td div.image-wrapper legend {
+.about-us div.hobbies div.image-wrapper {
+    width: 30%;
+    margin: auto;
+    display: inline-block;
+}
+
+.about-us div.hobbies div.image-wrapper legend {
     text-align: center;
 }
 
-.about-us table.hobbies tr td span.legend {
-    color: white;
-    font-size: 16pt;
+.about-us div.hobbies div.image-wrapper legend img {
+    width: 30%;
 }
 
-@media (max-width: 480px) {
-    .about-us h2 {
-        font-size: 26pt !important;
-    }
-
-    .about-us div.image-wrapper {
-        float: right;
-        margin-right: 0;
-        margin-left: 5%;
-    }
+.about-us div.hobbies span.legend {
+    color: white;
+    font-size: 16pt;
 }
 
 
@@ -311,11 +303,7 @@ section .section-header h2 {
     font-size: 16pt;
 }
 
-@media (max-width: 480px) {
-    .testimonial h2 {
-        font-size: 26pt !important;
-    }
-}
+
 
 
 /* MES COMPETENCES */
@@ -518,25 +506,7 @@ section .section-header h2 {
     width: 70px;
 }
 
-@media (max-width: 1200px) {
-    .our-team .textwidget form .submit .img-wrapper {
-        display: none;
-    }
-}
 
-@media (max-width: 480px) {
-    .our-team h2 {
-        font-size: 26pt !important;
-    }
-
-    .our-team .textwidget div.competences {
-        margin-bottom: 350px;
-    }
-
-    .our-team .textwidget div.competences ul li {
-        width: 100%;
-    }
-}
 
 
 /* ME CONTACTER */
@@ -568,11 +538,6 @@ section .section-header h2 {
     background-color: #50848B;
 }
 
-@media (max-width: 480px) {
-    .contact-us h2 {
-        font-size: 26pt !important;
-    }
-}
 
 
 /* RESTONS EN CONTACT */
@@ -644,8 +609,12 @@ body.page-id-274 div.contact .choice {
     color: white;;
     font-size: 22pt;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     font-family: 'rockwell-condensed',serif !important;
+}
+
+body.page-id-274 div.contact .social-network {
+    margin-top: 50px;
 }
 
 body.page-id-274 div.contact .choice .highlight {
@@ -657,30 +626,38 @@ body.page-id-274 div.contact .choice .highlight {
     font-weight: bold;
 }
 
-body.page-id-274 div.contact table {
+body.page-id-274 div.contact div.logos {
     margin: auto;
     margin-top: 40px;
-    border: none;
-    width: 25%;
+    width: 80%;
 }
 
-body.page-id-274 div.contact table tr td{
-    border: none
-}
-
-body.page-id-274 div.contact table tr td .img-wrapper {
+body.page-id-274 div.contact div.logos .img-wrapper {
     text-align: center;
+    display: inline-block;
+    width: 30%;
 }
 
-body.page-id-274 div.contact table tr td .img-wrapper img {
-    width: 100px;
+body.page-id-274 div.contact div.logos .linkedin {
+    margin-left: 15%;
+    float: left
+}
+
+body.page-id-274 div.contact div.logos .viadeo {
+    margin-right: 15%;
+    float: right
+}
+
+body.page-id-274 div.contact div.logos .img-wrapper img {
+    width: 90%;
 }
 
 body.page-id-274 div.contact .choice .details {
+    clear: both;
     color: white;
     font-size: 22pt;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
     font-family: 'rockwell-condensed',serif !important;
     line-height: 150%;
 }
@@ -689,9 +666,18 @@ body.page-id-274 div.contact .choice .details .highlight {
     color: white;
     font-size: 22pt;
     text-align: center;
-    margin-top: 50px;
     font-family: 'rockwell-condensed',serif !important;
     font-weight: bold;
+}
+
+body.page-id-274 div.contact .social-network .details .highlight {
+    margin-top: 50px;
+}
+
+body.page-id-274 div.contact .coffee-proposition {
+    clear: both;
+    display: block;
+    margin-top: 250px;
 }
 
 body.page-id-274 div.contact .choice .coffee img {
@@ -709,7 +695,7 @@ body.page-form-accept div.main-content h2 {
     color: #50848B;
     font-family: 'rockwell-condensed',serif !important;
     text-align: center;
-    font-size: 35pt;
+    font-size: 35pt !important;
     line-height: 120%;
     font-weight: normal;
     margin-top: 40px;
@@ -821,4 +807,196 @@ footer #zerif-copyright a {
 
 footer .company-details .icon-top img {
     width: 80px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .our-team .textwidget form .submit .img-wrapper {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .section-header {
+        padding-bottom: 0;
+    }
+
+    body.page-id-274 div.contact h3 {
+        font-size: 20pt;
+    }
+}
+
+
+
+@media (max-width: 614px) {
+    body.page-form-accept div.main-content .contact h3 {
+        font-size: 20pt;
+    }
+}
+
+
+
+@media (max-width: 554px) {
+    body.page-form-accept div.main-content .contact .contact-methods {
+        font-size: 17pt;
+    }
+
+    body.page-form-accept div.main-content .contact .contact-methods a {
+        font-size: 17pt;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .entry-content p {
+        margin: 0;
+        padding: 0;
+    }
+
+    header .header-content-wrap {
+        padding-top: 40px;
+    }
+
+    header .header-content-wrap h1 {
+        font-size: 55px;
+    }
+
+
+    .about-us {
+        padding-bottom: 10px;
+    }
+
+    .about-us h2 {
+        font-size: 26pt !important;
+    }
+
+    .about-us div.image-wrapper {
+        float: right;
+        margin-right: 0;
+        margin-left: 5%;
+    }
+
+    .about-us div.image-wrapper img {
+        width: 50%;
+    }
+
+    .about-us div.hobbies {
+        margin-bottom: 0;
+    }
+
+    .about-us div.hobbies div.image-wrapper {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-us div.hobbies div.image-wrapper legend img {
+        width: 30%;
+    }
+
+
+    .our-team {
+        padding-bottom: 10px;
+    }
+
+    .our-team h2 {
+        font-size: 26pt !important;
+    }
+
+    .our-team .textwidget div.competences {
+        margin-bottom: 350px;
+    }
+
+    .our-team .textwidget div.competences ul li {
+        width: 100%;
+    }
+
+
+    .testimonial h2 {
+        font-size: 26pt !important;
+    }
+
+
+    .contact-us {
+        padding-bottom: 10px;
+    }
+
+    .contact-us h2 {
+        font-size: 26pt !important;
+    }
+
+
+
+    /* RESTONS EN CONTACT */
+    body.page-id-274 h2 {
+        font-size: 22pt !important;
+    }
+
+    body.page-id-274 h2 .highlight {
+        font-size: 22pt !important;
+    }
+
+    body.page-id-274 div.contact {
+        width: 100%;
+        padding: 20px;
+    }
+
+    body.page-id-274 div.contact .choice {
+        font-size: 15pt;
+    }
+
+    body.page-id-274 div.contact .choice .highlight {
+        font-size: 15pt;
+    }
+
+    body.page-id-274 div.contact div.logos {
+        margin-top: 20px;
+    }
+
+    body.page-id-274 div.contact div.logos .img-wrapper {
+        margin: auto;
+    }
+
+    body.page-id-274 div.contact div.logos .img-wrapper {
+        float: none;
+        display: block;
+        width: 40%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    body.page-id-274 div.contact .choice .details {
+        font-size: 15pt;
+    }
+
+    body.page-id-274 div.contact .choice .details .highlight {
+        font-size: 15pt;
+    }
+
+    body.page-id-274 div.contact .coffee-proposition {
+        margin-top: 0;
+    }
+
+    body.page-id-274 div.contact .coffee-proposition .details {
+        margin-top: 20px;
+    }
+
+    body.page-id-274 div.contact .choice .coffee img {
+        width: 40%;
+        margin-top: 10px;
+    }
+
+
+    /** FORM ACCEPT **/
+    body.page-form-accept div.main-content h2 {
+        font-size: 20pt !important;
+    }
+
+    body.page-form-accept div.main-content .contact {
+        width: 80%;
+    }
 }
