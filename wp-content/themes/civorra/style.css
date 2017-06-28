@@ -831,6 +831,14 @@ footer .company-details .icon-top img {
 
 
 
+@media (max-width: 716px) {
+    .our-team .textwidget div.competences {
+        margin-bottom: 320px;
+    }
+}
+
+
+
 @media (max-width: 614px) {
     body.page-form-accept div.main-content .contact h3 {
         font-size: 20pt;
@@ -846,6 +854,14 @@ footer .company-details .icon-top img {
 
     body.page-form-accept div.main-content .contact .contact-methods a {
         font-size: 17pt;
+    }
+}
+
+
+
+@media (max-width: 537px) {
+    .our-team .textwidget div.competences {
+        margin-bottom: 450px;
     }
 }
 
