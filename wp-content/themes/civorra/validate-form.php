@@ -152,7 +152,7 @@ else {
                 </div> <!-- /.main-nav -->
             </header> <!-- / END HOME SECTION  -->
             <div class="main-content">
-                <h2>VOUS RECHERCHEZ UNE CANDIDATE AVEC LES COMPETENCES SUIVANTES</h2>
+                <h2>VOUS RECHERCHEZ UNE CANDIDATE AVEC LES <span class="highlight">COMPETENCES SUIVANTES</span> :</h2>
 
                 <div class="competences">
                     <ul>
@@ -171,7 +171,7 @@ else {
                 </div>
 
                 <div class="response">
-                    Je serai ravie de mettre à profit mes compétences dans votre équipe !
+                    Je serais ravie de mettre à profit mes compétences dans votre équipe !
                 </div>
 
                 <div class="contact">
@@ -188,13 +188,13 @@ else {
                 <div class="container">
                     <div class="col-md-3 company-details">
                         <div class="icon-top red-text">
-                            <a href="https://www.linkedin.com/profile/christelleivorra" title="Linkedin"><img src="<?php echo $website ?>/wp-content/uploads/2017/06/lnkd.png" alt="linkedin">
+                            <a href="https://www.linkedin.com/in/christelleivorra" title="Linkedin" target="_blank"><img src="<?php echo $website ?>/wp-content/uploads/2017/06/lnkd.png" alt="linkedin">
                         </div>
                     </div>
 
                     <div class="col-md-3 company-details">
                         <div class="icon-top green-text">
-                            <a href="https://www.viadeo.com/profile/christelleivorra" title="Viadeo"><img src="<?php echo $website ?>/wp-content/uploads/2017/06/viadeo.png" alt="viadeo">
+                            <a href="https://www.viadeo.com/fr/profile/christelle.ivorra" title="Viadeo" target="_blank"><img src="<?php echo $website ?>/wp-content/uploads/2017/06/viadeo.png" alt="viadeo">
                         </div>
                     </div>
 
@@ -206,7 +206,7 @@ else {
                     </div>
 
                     <div class="col-md-3 copyright">
-                        <p id="zerif-copyright">Développé par Vincent JACQUEMIN<br>Design : Christelle IVORRA<br><a href="#">Crédits images</a> <br></p>
+                        <p id="zerif-copyright">Développé par Vincent JACQUEMIN<br>Design : Christelle IVORRA<br><a href="<?php echo $website ?>/credits-images">Crédits images</a> <br></p>
                         <div class="zerif-copyright-box">
                             <a class="zerif-copyright" rel="nofollow">Zerif Lite </a>developed by <a class="zerif-copyright" href="https://themeisle.com" target="_blank" rel="nofollow"> ThemeIsle</a>
                         </div>

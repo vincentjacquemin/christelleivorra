@@ -93,7 +93,7 @@
 
 						if( ! empty( $zerif_address_icon ) ) {
 							echo '<div class="icon-top red-text">';
-								 echo '<a href="https://www.linkedin.com/profile/christelleivorra"><img src="'.esc_url( $zerif_address_icon ).'" alt="" /></a>';
+								 echo '<a href="https://www.linkedin.com/in/christelleivorra" target="_blank"><img src="'.esc_url( $zerif_address_icon ).'" alt="" /></a>';
 							echo '</div>';
 						}
 
@@ -114,7 +114,7 @@
 
 						if( ! empty( $zerif_email_icon) ) {
 							echo '<div class="icon-top green-text">';
-								echo '<a href="https://www.viadeo.com/profile/christelleivorra"><img src="'.esc_url($zerif_email_icon).'" alt="" /></a>';
+								echo '<a href="https://www.viadeo.com/fr/profile/christelle.ivorra" target="_blank"><img src="'.esc_url($zerif_email_icon).'" alt="" /></a>';
 							echo '</div>';
 						}
 						if( ! empty( $zerif_email) ) {

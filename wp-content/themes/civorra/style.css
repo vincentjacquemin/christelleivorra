@@ -34,7 +34,8 @@ body.home header ul .menu-item-object-page {
 /* HEADER TITLE */
 header .header-content-wrap {
     background: rgba(0, 0, 0, 0.6);
-    height: 700px;
+    height: 850px;
+    padding-top: 250px;
 }
 
 header .navbar-inverse {
@@ -76,7 +77,7 @@ header .navbar-inverse .navbar-brand .site-title a {
 /* HEADER MENU */
 header .navbar-inverse .navbar-nav>li>a {
     color: white;
-    font-size: 14pt;
+    font-size: 18pt;
 }
 
 header .navbar-inverse .navbar-nav>li>a:before {
@@ -94,21 +95,35 @@ header .navbar-inverse .navbar-toggle>li>a:focus {
 }
 
 /* HEADER */
-header h1.intro-text {
-    margin: auto;
-    font-family: 'rockwell-condensed',serif !important;
-    text-transform: none;
+header h1.intro-text .name {
+    font-family: 'bernadette',sans-serif !important;
+    text-transform: capitalize;
     font-weight: normal;
-    width: 100%;
-    text-align: center;
-    line-height: 150%;
-    color: white;
-    text-shadow:0 0 100px black;
-    font-size: 70px;
+    font-size: 35pt;
 }
 
-header h1.intro-text .important {
-    font-weight: bold;
+header h1.intro-text .subtitle {
+    font-family: 'rockwell-condensed',serif !important;
+    font-size: 20pt;
+    font-weight: normal;
+}
+
+header h1.intro-text .subtitle .age {
+    font-size: 20pt;
+    text-transform: lowercase;
+}
+
+header h1.intro-text .subtitle .city {
+    font-size: 20pt;
+    text-transform: capitalize;
+}
+
+header h1.intro-text .job {
+    margin-top: 30px;
+    font-family: 'rockwell-condensed',serif !important;
+    font-size: 45pt;
+    font-weight: normal;
+    line-height: normal;
 }
 
 
@@ -150,7 +165,7 @@ section .section-header h2 {
 
 .about-us h3 {
     margin-top: 40px;
-    font-size: 20pt;
+    font-size: 24pt;
     text-align: center;
 }
 
@@ -170,12 +185,12 @@ section .section-header h2 {
 .about-us .col-md-12.zerif_about_us_center div {
     text-align: center;
     color: white;
-    font-size: 16pt;
+    font-size: 18pt;
 }
 
 .about-us .col-md-12.zerif_about_us_center div .highlight {
     color: #F8D664;
-    font-size: 16pt;
+    font-size: 18pt;
 }
 
 .about-us div.presentation div.image-wrapper,
@@ -206,6 +221,7 @@ section .section-header h2 {
     width: 30%;
     margin: auto;
     display: inline-block;
+    vertical-align: top;
 }
 
 .about-us div.hobbies div.image-wrapper legend {
@@ -217,8 +233,12 @@ section .section-header h2 {
 }
 
 .about-us div.hobbies span.legend {
+    color: #F8D664;
+    font-size: 18pt;
+}
+
+.about-us div.hobbies span.sublegend {
     color: white;
-    font-size: 16pt;
 }
 
 
@@ -258,19 +278,19 @@ section .section-header h2 {
 /* Box title */
 .testimonial .feedback-box .message h4 span.highlight {
     color: #F8D664;
-    font-size: 16pt;
+    font-size: 18pt;
     font-weight: bold;
 }
 
 .testimonial .feedback-box .message h4 span.title {
     color: #50848B;
-    font-size: 16pt;
+    font-size: 18pt;
     font-weight: bold;
 }
 
 .testimonial .feedback-box .message h4 span.details {
     color: #50848B;
-    font-size: 16pt;
+    font-size: 18pt;
 }
 
 /* Box list */
@@ -281,7 +301,7 @@ section .section-header h2 {
 
 .testimonial .feedback-box .message ul li {
     color: black;
-    font-size: 16pt;
+    font-size: 18pt;
     text-align: justify;
     margin-left: -48px;
     line-height: 150%;
@@ -289,18 +309,18 @@ section .section-header h2 {
 
 .testimonial .feedback-box .message ul li .highlight {
     color: #F8D664;
-    font-size: 16pt;
+    font-size: 18pt;
 }
 
 .testimonial .feedback-box .message ul li .title {
     color: #50848B;
     font-weight: bold;
-    font-size: 16pt;
+    font-size: 18pt;
 }
 
 .testimonial .feedback-box .message ul li .important {
     font-weight: bold;
-    font-size: 16pt;
+    font-size: 18pt;
 }
 
 
@@ -330,14 +350,14 @@ section .section-header h2 {
 
 .our-team .textwidget .instruction {
     color: white;
-    font-size: 16pt;
+    font-size: 18pt;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .our-team .textwidget .instruction .highlight {
     font-weight: bold;
-    font-size: 16pt;
+    font-size: 18pt;
     color: #F8D664;
 }
 
@@ -370,7 +390,7 @@ section .section-header h2 {
 }
 
 .our-team .textwidget div.competences ul li label {
-    font-size: 16pt;
+    font-size: 18pt;
 }
 
 .our-team .textwidget div.competences ul li input[type='checkbox'] {
@@ -379,11 +399,11 @@ section .section-header h2 {
 
 .our-team .textwidget ul li label .highlight {
     color: #F8D664;
-    font-size: 16pt;
+    font-size: 18pt;
 }
 
 .our-team .textwidget div.competences ul li label .star {
-    font-size: 16pt;
+    font-size: 18pt;
 }
 
 /* Base for label styling */
@@ -602,7 +622,7 @@ body.page-id-274 div.contact h3 {
     font-size: 40pt;
     width: 80%;
     margin: auto;
-    border-bottom: dotted 3px white;
+    border-bottom: dotted 3px #F8D664;
 }
 
 body.page-id-274 div.contact .choice {
@@ -618,12 +638,12 @@ body.page-id-274 div.contact .social-network {
 }
 
 body.page-id-274 div.contact .choice .highlight {
-    color: white;;
+    color: white;
     font-size: 22pt;
     text-align: center;
     margin-top: 50px;
     font-family: 'rockwell-condensed',serif !important;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 body.page-id-274 div.contact div.logos {
@@ -639,17 +659,17 @@ body.page-id-274 div.contact div.logos .img-wrapper {
 }
 
 body.page-id-274 div.contact div.logos .linkedin {
-    margin-left: 15%;
+    margin-left: 20%;
     float: left
 }
 
 body.page-id-274 div.contact div.logos .viadeo {
-    margin-right: 15%;
+    margin-right: 20%;
     float: right
 }
 
 body.page-id-274 div.contact div.logos .img-wrapper img {
-    width: 90%;
+    width: 70%;
 }
 
 body.page-id-274 div.contact .choice .details {
@@ -667,7 +687,7 @@ body.page-id-274 div.contact .choice .details .highlight {
     font-size: 22pt;
     text-align: center;
     font-family: 'rockwell-condensed',serif !important;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 body.page-id-274 div.contact .social-network .details .highlight {
@@ -678,6 +698,14 @@ body.page-id-274 div.contact .coffee-proposition {
     clear: both;
     display: block;
     margin-top: 250px;
+}
+
+body.page-id-274 div.contact .coffee-proposition .details a {
+    color: #F8D664;
+    font-size: 22pt;
+    text-align: center;
+    font-family: 'rockwell-condensed',serif !important;
+    font-weight: normal;
 }
 
 body.page-id-274 div.contact .choice .coffee img {
@@ -698,7 +726,18 @@ body.page-form-accept div.main-content h2 {
     font-size: 35pt !important;
     line-height: 120%;
     font-weight: normal;
-    margin-top: 40px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+body.page-form-accept div.main-content h2 .highlight {
+    color: #50848B;
+    font-family: 'rockwell-condensed',serif !important;
+    text-align: center;
+    font-size: 35pt !important;
+    line-height: 120%;
+    font-weight: bold;
+    margin-top: 80px;
     margin-bottom: 40px;
 }
 
@@ -717,7 +756,7 @@ body.page-form-accept div.main-content .competences ul li {
 }
 
 body.page-form-accept div.main-content .competences ul li .highlight {
-    color: #F8D664;
+    color: #50848B;
     font-size: 22pt;
     text-align: center;
     margin-top: 10px;
@@ -750,11 +789,11 @@ body.page-form-accept div.main-content .contact {
     -moz-border-radius: 30px;
     -webkit-border-radius: 30px;
     border-radius: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 70%;
+    width: 40%;
     color: white;
     font-size: 22pt;
 }
@@ -763,24 +802,23 @@ body.page-form-accept div.main-content .contact h3 {
     color: white;
     font-family: 'bernadette',serif !important;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     font-size: 40pt;
     width: 80%;
     margin: auto;
     margin-bottom: 40px;
-    border-bottom: dotted 3px white
+    border-bottom: dotted 3px #F8D664
 }
 
 body.page-form-accept div.main-content .contact .contact-methods {
     font-size: 22pt;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 body.page-form-accept div.main-content .contact .contact-methods a {
     font-size: 22pt;
-    color: white;
-    text-decoration: underline;
+    color: #F8D664;
 }
 
 
