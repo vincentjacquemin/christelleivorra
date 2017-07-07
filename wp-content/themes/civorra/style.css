@@ -12,15 +12,15 @@
 
 @font-face {
     font-family: "bernadette";
-    src: url('http://test.civorra.fr/wp-content/themes/civorra/fonts/bernadette.ttf');
+    src: url('fonts/bernadette.ttf');
 }
 @font-face {
     font-family: "rockwell-condensed";
-    src: url('http://test.civorra.fr/wp-content/themes/civorra/fonts/rockwell-condensed.ttf');
+    src: url('fonts/rockwell-condensed.ttf');
 }
 @font-face {
     font-family: "rockwell-condensed-bold";
-    src: url('http://test.civorra.fr/wp-content/themes/civorra/fonts/rockwell-condensed-bold.ttf');
+    src: url('http://www.christelleivorra.com/wp-content/themes/civorra/fonts/rockwell-condensed-bold.ttf');
 }
 
 body {
